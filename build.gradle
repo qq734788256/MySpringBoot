@@ -31,5 +31,8 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile ("mysql:mysql-connector-java:5.1.38")
+    compile ("org.springframework.boot:spring-boot-starter-data-jpa:1.2.3.RELEASE")//同spring-boot-gradle-plugin版本保持一致（大于可能会报错，小于没有试）
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
