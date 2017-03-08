@@ -23,7 +23,7 @@ public class DemoService {
     public void save(TestUser demo){
         demoRepository.save(demo);
     }
-    public TestUser queryById(long id){
+    public TestUser queryById(long id) {
         return demoDao.getInfoById(id);
     }
 }
