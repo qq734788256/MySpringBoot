@@ -13,6 +13,7 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'war'
 apply plugin: 'spring-boot'
 
 //生成的jar包包名和版本
@@ -34,7 +35,7 @@ dependencies {
     compile ("mysql:mysql-connector-java:5.1.38")
     compile ("org.springframework.boot:spring-boot-starter-data-jpa:1.2.3.RELEASE")//同spring-boot-gradle-plugin版本保持一致（大于可能会报错，小于没有试）
     compile ("com.alibaba:druid:1.0.18")
-    compile("org.springframework.boot:spring-boot-starter-freemarker")
+    compile("org.springframework.boot:spring-boot-starter-free marker")
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
